@@ -1,0 +1,5 @@
+class Node {
+
+  Node next;
+
+}
