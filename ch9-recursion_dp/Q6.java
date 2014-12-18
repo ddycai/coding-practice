@@ -14,7 +14,7 @@
 
 import java.util.*;
 
-public class Question6 {
+public class Q6 {
 
   /*
    * Prints all well-formed parentheses with n pairs of brackets.

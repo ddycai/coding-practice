@@ -8,7 +8,7 @@
 
 import java.util.*;
 
-public class Question10 {
+public class Q10 {
 
   public static void main(String[] args) {
 

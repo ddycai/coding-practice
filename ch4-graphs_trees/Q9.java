@@ -1,5 +1,5 @@
 /*
- * 4.9 You are given a binary tree in which each node contains a value.
+ * You are given a binary tree in which each node contains a value.
  * Design an algorithm to print all path which sum to a given value. That path does not need to start or end at the root or a leaf.
  *
  * Solution: Each node can branch off into multiple paths downwards, but can only branch up to one path (the ancestor path).
@@ -7,7 +7,7 @@
  * If so, print that path.
  */
 
-public class SumPath {
+public class Q9 {
 
   public static void findPaths(TreeNode node, int target, int[] path, int depth) {
     if(node == null)

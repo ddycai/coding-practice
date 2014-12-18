@@ -13,7 +13,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Question8 {
+public class Q8 {
 
   public static void drawHorizontalLine(byte[] screen, int width, int x1, int x2, int y) {
   }

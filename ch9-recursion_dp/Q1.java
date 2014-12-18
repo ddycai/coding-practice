@@ -18,7 +18,7 @@
 
 import java.util.*;
 
-public class Question1 {
+public class Q1 {
 
   /*
    * Brute force recursive implemention

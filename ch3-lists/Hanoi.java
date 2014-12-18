@@ -1,7 +1,7 @@
 import java.util.*;
 
-/**
- * Question: Write an algorithm using three stacks to simulate the Towers of Hanoi.
+/*
+ * Write an algorithm using three stacks to simulate the Towers of Hanoi.
  */
 class Hanoi {
 

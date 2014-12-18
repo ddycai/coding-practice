@@ -1,9 +1,10 @@
+/*
+ * Write an algorithm to determine if two nodes can reach each other in a directed graph.
+ */
+
 import java.util.*;
 
-/**
- * Question: Write an algorithm to determine if two nodes can reach each other in a directed graph.
- */
-public class DFS {
+public class Q2 {
 
 	public static boolean dfs(Graph g, Node src, Node dest) {
 		src.marked = true;

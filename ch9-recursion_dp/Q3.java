@@ -12,7 +12,7 @@
 
 import java.util.*;
 
-public class Question3 {
+public class Q3 {
 
   public static boolean hasMagicIndex(int[] A) {
     for(int i = 0; i < A.length; i++)

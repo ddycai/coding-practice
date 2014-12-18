@@ -10,7 +10,7 @@
 
 import java.util.Scanner;
 
-public class Question6 {
+public class Q6 {
  
   /*
    * 0xaaaaaaaa = 1010...1010

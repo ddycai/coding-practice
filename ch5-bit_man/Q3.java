@@ -10,7 +10,7 @@
 
 import java.util.Scanner;
 
-public class Question3 {
+public class Q3 {
   
   public static int nextLargest(int n) {
     int one = 1;

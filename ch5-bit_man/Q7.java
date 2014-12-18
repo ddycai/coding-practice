@@ -19,7 +19,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Question7 {
+public class Q7 {
 
   /*
    * Generates a list of integers from 0 to n, then randomly removes one of them.

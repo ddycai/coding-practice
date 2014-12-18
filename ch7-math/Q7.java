@@ -20,7 +20,7 @@
 
 import java.util.*;
 
-public class Question7 {
+public class Q7 {
 
   /*
    * Find the next integer in A greater than n.

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Question1 {
+public class Q1 {
   
   public static int insert(int N, int M, int i, int j) {
    

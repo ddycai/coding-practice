@@ -10,7 +10,7 @@
 
 import java.util.*;
 
-public class Question4 {
+public class Q4 {
 
   /*
    * Returns a set of all the subsets of the given set.

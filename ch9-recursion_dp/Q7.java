@@ -11,7 +11,7 @@
 
 import java.util.*;
 
-public class Question7 {
+public class Q7 {
 
 
   /*

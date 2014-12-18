@@ -1,9 +1,9 @@
 import java.util.*;
 
-/**
- * Question: Given a sorted array of integers, write an algorithm to build a binary search tree of minimal height.
+/*
+ * Given a sorted array of integers, write an algorithm to build a binary search tree of minimal height.
  */
-public class BuildBTree {
+public class Q3 {
 
 	public static TreeNode buildTree(int[] arr, int lo, int hi) {
 		int mid = (lo + hi)/2;

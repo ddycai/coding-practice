@@ -19,7 +19,7 @@
 
 import java.util.*;
 
-public class Question2 {
+public class Q2 {
 
   public static int fact(int n) {
     if(n == 0 || n == 1)

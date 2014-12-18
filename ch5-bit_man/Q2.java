@@ -11,7 +11,7 @@
 
 import java.util.Scanner;
 
-public class Question2 {
+public class Q2 {
   
   public static String doubleToBinary(double d) {
     int ans = 0, digit;

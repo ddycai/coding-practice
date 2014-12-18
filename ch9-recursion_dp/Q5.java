@@ -19,7 +19,7 @@
 
 import java.util.*;
 
-public class Question5 {
+public class Q5 {
 
   public static void printPerms(String s, String perm) {
     if(s.length() == 1) {

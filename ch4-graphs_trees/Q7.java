@@ -1,12 +1,12 @@
-/**
- * Question: Find the first common ancestor of two nodes in a binary tree
+/*
+ * Find the first common ancestor of two nodes in a binary tree.
  * Solution: Go up the ancestor path of the first node
  * For each ancestor, check if the second node is in the subtree
  */
 
 import java.util.Scanner;
 
-public class CommonAncestor {
+public class Q7 {
 
   public static TreeNode firstCommonAncestor(TreeNode a, TreeNode b) {
     TreeNode current = a.parent();
