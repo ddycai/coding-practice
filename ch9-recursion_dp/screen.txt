@@ -1,0 +1,6 @@
+5 5 3 2
+aaaaa
+abcba
+accca
+abcba
+aaaaa
