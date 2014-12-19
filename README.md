@@ -11,3 +11,4 @@ Each question begins with the question it is for.
 * ch07 - mathematics and probability
 * ch09 - recursion and dynamic programming
 * ch11 - sorting and searching
+* ch17 - moderate review problems

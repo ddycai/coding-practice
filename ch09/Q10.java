@@ -15,3 +15,6 @@ public class Q10 {
   }
 
 }
+
+class Box {
+}
