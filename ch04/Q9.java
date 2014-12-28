@@ -1,10 +1,13 @@
 /*
- * You are given a binary tree in which each node contains a value.
- * Design an algorithm to print all path which sum to a given value. That path does not need to start or end at the root or a leaf.
+ * You are given a binary tree in which each node contains a value.  Design an
+ * algorithm to print all path which sum to a given value. That path does not
+ * need to start or end at the root or a leaf.
  *
- * Solution: Each node can branch off into multiple paths downwards, but can only branch up to one path (the ancestor path).
- * Therefore, for each node, construct a path upwards and along the way check if the sum of the path is equal to target.
- * If so, print that path.
+ * Explanation
+ * Each node can branch off into multiple paths downwards, but can only branch
+ * up to one path (the ancestor path).  Therefore, for each node, construct a
+ * path upwards and along the way check if the sum of the path is equal to
+ * target. If so, print that path.
  */
 
 public class Q9 {

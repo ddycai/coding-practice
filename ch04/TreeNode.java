@@ -58,6 +58,19 @@ public class TreeNode {
     return nodes;
   }
 
+	public static int height(TreeNode r) {
+		if(r.left == null && r.right == null) {
+			r.height = 0;
+		} else {
+			int lh = 0, rh = 0;
+			if(r.left != null) lh = r.left.height + 1;
+			if(r.right != null) rh = r.right.height + 1;
+			r.height = Math.max(lh, rh);
+		}
+		return r.height;
+	}
+
+
   public static void inorder(TreeNode r) {
     if(r == null)
       return;

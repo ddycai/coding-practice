@@ -1,7 +1,9 @@
 /*
  * Find the first common ancestor of two nodes in a binary tree.
- * Solution: Go up the ancestor path of the first node
- * For each ancestor, check if the second node is in the subtree
+ * 
+ * Explanation
+ * Go up the ancestor path of the first node.
+ * For each ancestor, check if the second node is in one of its subtrees.
  */
 
 import java.util.Scanner;

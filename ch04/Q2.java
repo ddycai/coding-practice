@@ -1,5 +1,9 @@
 /*
  * Write an algorithm to determine if two nodes can reach each other in a directed graph.
+ *
+ * Explanation
+ * We do a simple depth first search from the source node which will visit
+ * every connected node. If we reach the destination node then we return true.
  */
 
 import java.util.*;

@@ -2,6 +2,13 @@ import java.util.*;
 
 /*
  * Given a sorted array of integers, write an algorithm to build a binary search tree of minimal height.
+ *
+ * Explanation
+ * In order to have a binary search tree of minimal height, the left and right
+ * subtrees must be balanced. How do we ensure that it is balanced? By picking
+ * the root to be the middle element of the sorted array. This ensures that the
+ * left and right subtrees have the same or almost the same number of nodes. We
+ * then apply this recursively to the left and right subarrays.
  */
 public class Q3 {
 
@@ -19,6 +26,9 @@ public class Q3 {
 		return t;
 	}
 
+  /**
+   * I'm using this method to verify that the resulting tree is correct.
+   */
 	public static void inorder(TreeNode r) {
 		if(r == null)
 			return;
