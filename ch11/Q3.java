@@ -6,8 +6,8 @@
  * We could do a linear search but we can find the element more efficiently using
  * a modified binary search.
  *
- * The key insight is that half when we partition a rotated sorted array in two
- * one half will always be sorted. What we can do is check if which side of the
+ * The key insight is that when we partition a rotated sorted array in two
+ * one half will always be sorted. What we can do is check which side of the
  * array is sorted by comparing A[mid] to A[low]. If A[mid] > A[low] then the left
  * side is sorted. If A[mid] < A[low] then the right side is sorted. 
  *

@@ -11,21 +11,26 @@
  * that. I'm keeping the solution using the longs because I think the bit
  * manipulation is neat.
  *
- * My solution is to place a queen in each row (or column, I chose row) and
- * check the constraints. I stored the constraints as three arrays: col, rdiag
- * and ldiag. col stores which columns have been taken up, rdiag stores which
- * right diagonals (diagonals going from the left up to the right) have been taken
- * up and ldiag stores the left diagonals (diagonals going from left down to
+ * My solution is to place a queen in each row and check the constraints. I
+ * stored the constraints as three arrays: col, rdiag and ldiag. col stores
+ * which columns have been taken up, rdiag stores which right diagonals
+ * (diagonals going from the left up to the right) have been taken up and ldiag
+ * stores the left diagonals (diagonals going from left down to
  * the right).
  *
  * To check which right diagonal a point (i, j) is on, we take i + j.
  * To check which left diagonal a point (i, j) is on, we take the difference i
  * - j then we add N - 1 as an offset for negative differences.
  *
- * I know this is not the most elegant solution, but it's at least more elegant
- * than my initial solution which was to have a boolean array of spaces that
- * are attacked. I did it this way before and the solution was not pretty! I
- * had to have four separate for loops to "attack" diagonals.
+ * You can see this by sketching our your own example and looking at the
+ * indices of the diagonals.
+ *
+ * Intuitively, it's because to traverse a diagonal from bottom left to top
+ * right, you do row--, col++, which makes the row + col always the same.
+ * From top left to bottom right, you do row++, col++, which makes the row -
+ * col always the same.
+ *
+ * I know this is not the most elegant solution, but it's not bad.
  */
 
 import java.util.*;
