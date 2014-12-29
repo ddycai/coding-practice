@@ -1,29 +1,30 @@
 /*
- * Given a sorted array of n integers that has been rotated an unknown number of
- * times, write code to find an element in the array. You may assume the array was
- * originally sorted in increasing order.
+ * Given a sorted array of n integers that has been rotated an unknown number
+ * of times, write code to find an element in the array. You may assume the
+ * array was originally sorted in increasing order.
  *
- * We could do a linear search but we can find the element more efficiently using
- * a modified binary search.
+ * We could do a linear search but we can find the element more efficiently
+ * using a modified binary search.
  *
  * The key insight is that when we partition a rotated sorted array in two
  * one half will always be sorted. What we can do is check which side of the
- * array is sorted by comparing A[mid] to A[low]. If A[mid] > A[low] then the left
- * side is sorted. If A[mid] < A[low] then the right side is sorted. 
+ * array is sorted by comparing A[mid] to A[low]. If A[mid] > A[low] then the
+ * left side is sorted. If A[mid] < A[low] then the right side is sorted. 
  *
  * If A[mid] == A[low] then if the left side is sorted then it consists of the
- * same number (that's the only way it could be sorted). Then we can ignore it 
- * since our number can't be there if it's not equal to A[mid]. So we check A[mid]
- * and A[hi]:
+ * same number (that's the only way it could be sorted). Then we can ignore it
+ * since our number can't be there if it's not equal to A[mid]. So we check
+ * A[mid] and A[hi]:
  *
- * If A[mid] > A[hi] then the right side is not sorted, which means left is sorted
- * and we can ignore it. Search right.
+ * If A[mid] > A[hi] then the right side is not sorted, which means left is
+ * sorted and we can ignore it. Search right.
  * If A[mid] == A[hi], we can't tell anything. So search both sides.
  * If A[mid] < A[hi]: this could not happen unless the array was not rotated.
- * Why? If the array was rotated then A[lo] >= A[hi]. We know A[lo] == A[mid] and
- * A[mid] < A[hi]. Then A[lo] == A[hi], which is the case above.
+ * Why? If the array was rotated then A[lo] >= A[hi]. We know A[lo] == A[mid]
+ * and A[mid] < A[hi]. Then A[lo] == A[hi], which is the case above.
  * If the array was not rotated, then A[lo] can be less than A[hi], which means
- * both sides are sorted. Then the left side is all repeats and we can ignore it.
+ * both sides are sorted. Then the left side is all repeats and we can ignore
+ * it.
  *
  * As you can see, if A[mid] != A[hi], then we ignore the left because we know
  * that it's sorted, which is how we arrive at the algorithm below.
