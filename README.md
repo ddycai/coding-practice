@@ -15,3 +15,4 @@ insight.
 * ch09 - recursion and dynamic programming
 * ch11 - sorting and searching
 * ch17 - moderate review problems
+* misc - questions from other sources
